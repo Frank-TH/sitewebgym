@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Gold's Gym Perú</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Script -->
+    <script src="js/menu.js"></script>
+    <script src="js/login.js"></script>
+
+</head>
+
+<body>
+    <!-- **************************************************************************************** -->
+    <div id="login" class="login">
+
+        <form class="login-content animate" action="validar.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+            </div>
+
+            <div class="contenedor">
+                <label for="usuario" class="texto"><b>Usuario</b></label>
+                <input type="text" placeholder="Enter Username" name="usuario" id="usuario" required>
+
+                <label for="pass" class="texto"><b>Contraseña</b></label>
+                <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+
+                <button type="submit" class="texto">Iniciar Session</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Recuerda
+                </label>
+            </div>
+
+            <div class="contenedor" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('login').style.display='none'"
+                    class="cancelbtn texto">Cancel</button>
+                <span class="psw texto">Me olvidé <a href="#" class="texto">contraseña?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- ******************************************************************************************************* -->
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">sport fit latino</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <div class="main-header__contaInfo__phone"><span class="icon-phone"></span>999-999-999
+                </div>
+                <div class="main-header__contacInfo__address"><span class="icon-location"></span>Urb. calle #####
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btn-menu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/" class="menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link menu__link--select">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a onclick="document.getElementById('login').style.display='block'"
+                        style="width:auto;" class="menu__link">Login</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-youtube"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <img src="img/box.jpg" alt="" class="banner__img">
+        <div class="banner__content">Lo mejor de nosotros a tu disposicion</div>
+    </section>
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Nuestro equipo</h2>
+                <p class="main__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure sequi rerum maiores
+                    suscipit excepturi blanditiis? Iusto magni minus debitis omnis commodi vero enim, odio sapiente
+                    temporibus quos reiciendis doloribus minima.
+                </p>
+            </div>
+        </section>
+        <section class="group our-team">
+            <h2 class="group__title">El mejor equipo</h2>
+            <div class="container container--flex">
+                <div class="column--33">
+                    <h3 class="our-team__title">Josef Taylor</h3>
+                    <img src="img/josef taylor.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iste necessitatibus iure
+                        similique possimus. Magni reprehenderit nostrum explicabo quis ratione doloribus nisi
+                        exercitationem esse quod, nulla corrupti debitis, omnis magnam?
+                    </p>
+                </div>
+                <div class="column--33">
+                    <h3 class="our-team__title">Abril Quintero</h3>
+                    <img src="img/Aelen romero.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iste
+                        necessitatibus iure similique possimus. Magni reprehenderit nostrum explicabo quis ratione
+                        doloribus nisi exercitationem esse quod, nulla corrupti debitis, omnis magnam?</p>
+                </div>
+                <div class="column--33">
+                    <h3 class="our-team__title">Cesar Gelao</h3>
+                    <img src="img/Cesar galeão.jpg" alt="" class="our-team__img">
+                    <p class="our-team__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero iste
+                        necessitatibus iure similique possimus. Magni reprehenderit nostrum explicabo quis ratione
+                        doloribus nisi exercitationem esse quod, nulla corrupti debitis, omnis magnam?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Razon de visita?</h2>
+                <p class="column__txt"></p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contactanos</h2>
+                <p class="column__txt"></p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Siguenos en nuestras rede sociales</h2>
+                <p class="column__txt"><a href="" class="icon-facebook"> Facebook</a></p>
+                <p class="column__txt"><a href="" class="icon-instagram"> Siguenos en Instagram</a></p>
+                <p class="column__txt"><a href="" class="icon-youtube"> Visita nuestro canal de youtube</a></p>
+            </div>
+            <p class="copy">© 2020 Sport fit | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
